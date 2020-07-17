@@ -1,0 +1,4 @@
+R_DEF: Internal format may change without notice
+local
+id viewpager
+layout need_this_for_maven

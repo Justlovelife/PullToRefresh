@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.handmark.pulltorefresh.samples"
+        minSdkVersion 15
+        targetSdkVersion 29
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':library')
+    implementation  project(':pullToRefreshListFragment')
+    implementation  project(':pullToRefreshViewPager')
+    implementation 'androidx.fragment:fragment:1.2.5'
+
+}
